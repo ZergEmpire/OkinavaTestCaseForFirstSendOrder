@@ -82,7 +82,7 @@ public class TestBase {
     @Step("Выбираю рандомный город. Выбор городов реализован через Drop Down")
 
     public void restSelect() {
-        $x("//button[contains(@class, \"btn-address-selector\")]").click();
+       /* $x("//button[contains(@class, \"btn-address-selector\")]").click();*/
         $(By.xpath("//label[@class = \"last\"]")).shouldBe(visible).click();
 
         $x("//div[@class = \"ymaps-form-container\"]//label[@class = \"first\"]").shouldBe(visible).click();
